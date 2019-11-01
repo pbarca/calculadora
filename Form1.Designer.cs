@@ -54,6 +54,8 @@
             this.C = new System.Windows.Forms.Button();
             this.MaisMenos = new System.Windows.Forms.Button();
             this.OFF = new System.Windows.Forms.Button();
+            this.minus = new System.Windows.Forms.Label();
+            this.memory = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -443,6 +445,28 @@
             this.OFF.UseVisualStyleBackColor = false;
             this.OFF.Click += new System.EventHandler(this.Clicar);
             // 
+            // minus
+            // 
+            this.minus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.minus.Font = new System.Drawing.Font("OCR A Extended", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minus.Location = new System.Drawing.Point(185, 150);
+            this.minus.Name = "minus";
+            this.minus.Size = new System.Drawing.Size(100, 18);
+            this.minus.TabIndex = 26;
+            this.minus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.minus.UseCompatibleTextRendering = true;
+            // 
+            // memory
+            // 
+            this.memory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.memory.Font = new System.Drawing.Font("OCR A Extended", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memory.Location = new System.Drawing.Point(281, 150);
+            this.memory.Name = "memory";
+            this.memory.Size = new System.Drawing.Size(100, 18);
+            this.memory.TabIndex = 27;
+            this.memory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.memory.UseCompatibleTextRendering = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -450,6 +474,8 @@
             this.BackgroundImage = global::calculadora.Properties.Resources.calculadora;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(632, 654);
+            this.Controls.Add(this.memory);
+            this.Controls.Add(this.minus);
             this.Controls.Add(this.OFF);
             this.Controls.Add(this.raiz);
             this.Controls.Add(this.Percent);
@@ -512,6 +538,8 @@
         private System.Windows.Forms.Button C;
         private System.Windows.Forms.Button MaisMenos;
         private System.Windows.Forms.Button OFF;
+        private System.Windows.Forms.Label minus;
+        private System.Windows.Forms.Label memory;
     }
 }
 
