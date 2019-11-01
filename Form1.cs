@@ -24,7 +24,10 @@ namespace calculadora
 
         private void Clicar(object sender, EventArgs e)
         {
-            label1.Text = ((Button)sender).Name;
+            switch (((Button)sender).Name)
+            {
+                case "button1": label1.Text = "1"; break; 
+            }
 
         }
     }
